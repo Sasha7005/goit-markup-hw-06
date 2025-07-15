@@ -333,3 +333,117 @@ img {
 .contacts-items {
   font-style: normal;
 }
+.page-title {
+  background-color: #2e2f42;
+  padding: 72px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/mobile-title.jpg);
+  width: 320px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.title {
+  text-align: center;
+  max-width: 216px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background-color: #4d5ae5;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 16px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn {
+  display: block;
+  margin-top: 48px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #404bbf;
+}
+.btn-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .page-title {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-title.jpg);
+    width: 768px;
+    padding: 112px 0;
+  }
+  .title {
+    max-width: 496px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 36px;
+  }
+  .contacts {
+    margin-left: auto;
+  }
+  .contacts-link {
+    padding: 0px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .title {
+    .title {
+      margin-bottom: 48px;
+    }
+  }
+  .page-title {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    width: 1158px;
+    padding: 188px 0;
+  }
+  .contacts-list {
+    gap: 40px;
+  }
+  .contacts-link {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
