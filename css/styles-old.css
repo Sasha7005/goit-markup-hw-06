@@ -533,6 +533,8 @@ img {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
+  width: 24px;
+  height: 24px;
 }
 
 .close-bnt:hover .close-icon,
