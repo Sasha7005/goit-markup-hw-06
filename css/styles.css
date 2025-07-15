@@ -335,6 +335,7 @@ img {
   font-style: normal;
 }
 .page-title {
+  max-width: 1440px;
   background-color: #2e2f42;
   padding: 72px 0;
   background-image: linear-gradient(
@@ -343,7 +344,7 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/mobile-title.jpg);
-  width: 320px;
+
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -399,7 +400,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/tablet-title.jpg);
-    width: 768px;
+
     padding: 112px 0;
   }
   .title {
@@ -436,7 +437,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    width: 1158px;
+
     padding: 188px 0;
   }
   .contacts-list {
