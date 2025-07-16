@@ -1288,3 +1288,7 @@ textarea {
     width: 360px;
   }
 }
+.checkbox-privacy {
+  display: flex;
+  align-items: center;
+}
