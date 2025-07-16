@@ -222,7 +222,7 @@ img {
 .mobile-menu-container {
   position: absolute;
   top: 24;
-  right: 24px;
+  right: 16px;
 }
 .close-bnt {
   position: absolute;
