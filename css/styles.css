@@ -303,6 +303,9 @@ img {
   gap: 24px;
   margin-top: 8px;
 }
+.footer-icon {
+  margin-bottom: 72px;
+}
 .social-link-item-icon {
   width: 40px;
   height: 40px;
@@ -489,14 +492,22 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.features-list {
-  margin-bottom: 96px;
-  margin-top: 96px;
+.features-conteiner {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .features-items {
   margin-bottom: 72px;
 }
+.features-items:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
+  .page-features {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
   .features-title {
     margin-bottom: 8px;
     font-weight: 700;
@@ -530,6 +541,10 @@ img {
   }
 }
 @media screen and (min-width: 1158px) {
+  .page-features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .features-title {
     font-weight: 500;
     font-size: 20px;
@@ -568,7 +583,7 @@ img {
 /**/
 .page-team {
   background-color: #f4f4fd;
-  padding: 72px 0;
+  padding: 96px 0;
 }
 .page-team-title {
   font-weight: 700;
@@ -623,6 +638,7 @@ img {
   width: 40px;
   height: 40px;
 }
+
 .link-icon {
   width: 100%;
   height: 100%;
@@ -657,6 +673,9 @@ img {
 @media (min-width: 1158px) {
   .page-team-title-list {
     gap: 24px;
+  }
+  .page-team {
+    padding: 72px 0;
   }
 }
 
@@ -702,6 +721,9 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   margin-bottom: 48px;
+}
+.portfolio-item:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -826,9 +848,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 72px;
-}
-.footer-link-icon {
+
   gap: 16px;
 }
 .footer-social {
@@ -862,22 +882,7 @@ img {
   max-width: 100%;
   flex-direction: column;
 }
-.email-ipt {
-  height: 48px;
-  padding: 0 16px;
-  font-size: 16px;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  width: 264px;
-  height: 40px;
-  background-color: #2e2f42;
-  background-color: transparent;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
+
 .subscribe-btn {
   display: flex;
   align-items: center;
@@ -905,7 +910,7 @@ img {
   margin-left: 16px;
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .footer-link {
     max-width: 768px;
   }
   footer {
@@ -1119,7 +1124,7 @@ textarea {
   border: 1px solid #ffffff;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  width: 264px;
+  width: 288px;
   height: 40px;
   background-color: #2e2f42;
   background-color: transparent;
@@ -1127,6 +1132,27 @@ textarea {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  .email-ipt {
+    height: 48px;
+    padding: 0 16px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    width: 264px;
+    height: 40px;
+    background-color: #2e2f42;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+}
+.email-ipt::placeholder {
+  color: #fff;
 }
 ::placeholder {
   color: rgba(46, 47, 66, 0.4);
