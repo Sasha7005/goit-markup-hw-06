@@ -735,11 +735,11 @@ img {
   }
   .portfolio-item {
     margin-bottom: 0;
+    width: calc((100% - 24px) / 2);
   }
   .container {
     max-width: 768px;
-    padding: 0 24px;
-    box-sizing: content-box;
+    padding: 0 16px;
   }
 }
 
@@ -910,6 +910,12 @@ img {
   margin-left: 16px;
 }
 @media screen and (min-width: 768px) {
+  .footer-link-icon {
+    justify-content: flex-start;
+  }
+  .footer-conteiner {
+    margin-bottom: 0;
+  }
   .footer-link {
     max-width: 768px;
   }
@@ -920,13 +926,10 @@ img {
     justify-content: start;
   }
   .footer-link {
-    padding: 0 24px;
-    box-sizing: content-box;
     display: flex;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
-    justify-content: center;
   }
   .social-media {
     justify-content: start;
