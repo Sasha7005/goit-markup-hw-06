@@ -218,6 +218,10 @@ img {
 }
 .mobile-menu-nav {
   margin-bottom: auto;
+  padding-left: 16px;
+}
+.mobile-menu-contacts {
+  padding-left: 16px;
 }
 .mobile-menu-container {
   position: absolute;
@@ -343,12 +347,22 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/mobile-title.jpg);
+    url(../images/mobile@1x.jpg);
 
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-resolution: 192dpi) {
+  .page-title {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile@2x.jpg);
+  }
 }
 .title {
   text-align: center;
@@ -392,6 +406,7 @@ img {
   font-size: 16px;
   color: #fff;
 }
+
 @media screen and (min-width: 768px) {
   .page-title {
     background-image: linear-gradient(
@@ -399,9 +414,19 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet-title.jpg);
+      url(../images/desktop@1x.jpg);
 
     padding: 112px 0;
+  }
+  @media (min-resolution: 192dpi) {
+    .page-title {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/desktop@2x.jpg);
+    }
   }
   .title {
     max-width: 496px;
@@ -431,15 +456,9 @@ img {
     }
   }
   .page-title {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-
     padding: 188px 0;
   }
+
   .contacts-list {
     gap: 40px;
   }
@@ -1291,4 +1310,7 @@ textarea {
 .checkbox-privacy {
   display: flex;
   align-items: center;
+}
+.privacy-policy {
+  flex-shrink: 0;
 }
